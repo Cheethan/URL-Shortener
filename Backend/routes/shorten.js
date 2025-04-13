@@ -5,6 +5,8 @@ const generateQRCode = require('../utils/generateQRCode');
 const auth = require('../middleware/auth');
 const generateShortCode = require('../utils/generateShortCode');
 
+const API_BASE_URL = 'https://url-shortener-pfwp.onrender.com'; 
+
 const router = express.Router();
 
 router.post('/', auth, async (req, res) => {
@@ -20,7 +22,7 @@ router.post('/', auth, async (req, res) => {
 
   await newShort.save();
 
-  const shortUrl = `http://localhost:5000/r/${shortCode}`;
+  const shortUrl = `${API_BASE_URL}/r/${shortCode}`;
   const qrCode = await generateQRCode(shortUrl);
 
   res.json({ shortUrl, qrCode });

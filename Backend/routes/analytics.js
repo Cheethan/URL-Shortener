@@ -6,6 +6,9 @@ const auth = require('../middleware/auth');
 
 const router = express.Router();
 
+
+const API_BASE_URL = 'https://url-shortener-pfwp.onrender.com'; 
+
 router.get('/',auth, async (req, res) => {
   try {
     const userId = req.userId;
@@ -17,7 +20,7 @@ router.get('/',auth, async (req, res) => {
         return {
           originalUrl: url.originalUrl,
           shortCode: url.shortCode,
-          shortUrl: `http://localhost:5000/r/${url.shortCode}`,
+          shortUrl: `${API_BASE_URL}/r/${url.shortCode}`,
           createdAt: url.createdAt,
           clickCount,
         };

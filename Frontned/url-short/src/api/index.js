@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { data } from 'react-router-dom';
 
-const API_BASE_URL = 'http://localhost:5000'; 
+const API_BASE_URL = 'https://url-shortener-pfwp.onrender.com'; 
 
 export const login = async (email, password) => {
   try {

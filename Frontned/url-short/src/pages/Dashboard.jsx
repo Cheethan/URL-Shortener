@@ -25,7 +25,7 @@ const Dashboard = () => {
     const fetchUrls = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/analytics', {
+        const response = await axios.get('https://url-shortener-pfwp.onrender.com/analytics', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
