@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-   "build": "echo 'No build necessary for backend'"
+    "build": "echo 'No build necessary for backend'"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "axios": "^1.8.4",
     "cors": "^2.8.5",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
     "nanoid": "^5.1.5",
     "qrcode": "^1.5.4",
