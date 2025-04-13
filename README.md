@@ -6,8 +6,8 @@ A full-stack application to shorten URLs, generate QR codes, and track click ana
 
 **[Visit the App](https://url-shortener-pink-seven.vercel.app)** (Hosted on Vercel)
 
-Email: Testing@gmail.com
-Password: Test123
+-Email: Testing@gmail.com
+-Password: Test123
 
 ---
 
